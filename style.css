@@ -1,0 +1,51 @@
+
+@font-face {
+    font-family: "primer";
+    src: url("fonts/primer_print.ttf") format("truetype");
+}
+.primer-font {
+    font-family: "primer";
+}
+#logo {
+    height: 26%;
+    left: -1%;
+    position: absolute;
+    top: -2%;
+    width: 10%;
+    z-index: -1;
+}
+#lema {
+    color: #086a87;
+    font-size: 31pt;
+    height: 10%;
+    left: 8%;
+    position: absolute;
+    top: 6%;
+}
+#fundologlema {
+    background-color: #e6e6e6;
+    border-radius: 0;
+    height: 21%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -2;
+}
+#inicio {
+    left: 50%;
+    position: absolute;
+    top: 14%;
+}
+#iniciotext {
+    text-decoration: none;
+}
+#board {
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    height: 74%;
+    left: 2%;
+    position: absolute;
+    top: 25%;
+    width: 76%;
+}
