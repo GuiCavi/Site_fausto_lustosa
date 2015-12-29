@@ -1,0 +1,64 @@
+<!-- É bom sempre colocar esse bichinho aqui -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--
+      Não precisa do http-equiv
+      O content pode ser trocado por 'charset="utf-8"'
+
+      <meta charset="utf-8">
+    -->
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+
+    <!-- Não tem mais necessidade do type -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <!--
+      Aqui está uma versão mais recente (alpha)
+      Lembrando que se você linkar o jQuery depois de linkar um script que usa, vai dar pau!
+
+      EU, sempre que uso jQuery, faço o link em primeiro na lista de scripts
+    -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
+
+    <!-- O problema aqui é que não está linkado o jQuery -->
+    <script>
+      $(document).ready(function() {
+
+        $(".board").mouseover(function() {
+          alert("O cursor foi posicionado sobre a div.");
+        });
+
+      });
+    </script>
+  </head>
+
+  <!-- Uma dica: procura como colocar background no CSS, fica mais elegante (certo) -->
+  <body background="imgs/fundo.jpg">
+    <h1 id="lema" class="primer-font">Tradição em Educação</h1>
+    <img id="logo" src="imgs/logo.png" />
+
+    <div id="fundologlema">
+    </div>
+
+    <p id="inicio">
+      <a id="iniciotext" href="#">
+        <!-- Acho que bold não é mais utilizado no HTML5, provavelmente foi trocado por <b></b> -->
+        <bold>INICÍO</bold>
+      </a>
+    </p>
+
+    <div class="board">
+    </div>
+
+    <!-- Vale mencionar que colocar os scripts no final do HTML acelera o carregamento (dizem por ai!) -->
+    <!--
+      Pode fazer assim
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
+      <script src="script.js"></script>
+    -->
+
+  </body>
+
+</html>
